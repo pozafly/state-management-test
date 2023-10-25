@@ -20,10 +20,8 @@ export default function TodoItemCreator() {
     setInputValue('');
   };
 
-  const onChange = (event: ChangeEvent) => {
-    const target = event.target as HTMLInputElement;
-    setInputValue(target.value);
-  };
+  const onChange = (event: ChangeEvent<HTMLInputElement>) =>
+    setInputValue(event.target.value);
 
   return (
     <div>

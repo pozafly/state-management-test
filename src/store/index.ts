@@ -5,3 +5,10 @@ export const todoListState = atom<Todo[]>({
   key: 'todoListState',
   default: [],
 });
+
+export type FilterState = 'Show All' | 'Show Completed' | 'Show Uncompleted';
+
+export const todoListFilterState = atom<FilterState>({
+  key: 'todoListFilterState',
+  default: 'Show All',
+});

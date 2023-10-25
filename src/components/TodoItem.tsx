@@ -11,11 +11,10 @@ export default function TodoItem({ item }: TodoItemProp) {
   const [todoList, setTodoList] = useRecoilState(todoListState);
   const index = todoList.findIndex((listItem: Todo) => listItem === item);
 
-  const editItemText = (event: ChangeEvent) => {
-    const target = event.target as HTMLInputElement;
+  const editItemText = (event: ChangeEvent<HTMLInputElement>) => {
     const newList = replaceItemAtIndex(todoList, index, {
       ...item,
-      text: target.value,
+      text: event.target.value,
     });
     setTodoList(newList);
   };

@@ -1,7 +1,8 @@
 import { useRecoilValue } from 'recoil';
-import { todoListState } from '../store/index.ts';
 import TodoItem from './TodoItem.tsx';
 import TodoItemCreator from './TodoItemCreator.tsx';
+import { filteredTodoListState } from '../store/selectors/index.ts';
+import TodoListFilters from './TodoListFilters.tsx';
 
 export type Todo = {
   id: number;
@@ -10,10 +11,11 @@ export type Todo = {
 };
 
 export default function TodoList() {
-  const todoList: Todo[] = useRecoilValue(todoListState);
+  const todoList: Todo[] = useRecoilValue(filteredTodoListState);
 
   return (
     <>
+      <TodoListFilters />
       <TodoItemCreator />
 
       {todoList.map((todoItem) => (
