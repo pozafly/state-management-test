@@ -1,7 +1,7 @@
-import Recoil from './recoil/index.tsx';
+import Jotai from './jotai/index.tsx';
 
 function App() {
-  return <Recoil />;
+  return <Jotai />;
 }
 
 export default App;
