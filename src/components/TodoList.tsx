@@ -3,6 +3,7 @@ import TodoItem from './TodoItem.tsx';
 import TodoItemCreator from './TodoItemCreator.tsx';
 import { filteredTodoListState } from '../store/selectors/index.ts';
 import TodoListFilters from './TodoListFilters.tsx';
+import TodoListStats from './TodoListStats.tsx';
 
 export type Todo = {
   id: number;
@@ -15,6 +16,7 @@ export default function TodoList() {
 
   return (
     <>
+      <TodoListStats />
       <TodoListFilters />
       <TodoItemCreator />
 
