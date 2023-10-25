@@ -1,12 +1,7 @@
-import { RecoilRoot } from 'recoil';
-import TodoList from './components/TodoList.tsx';
+import Recoil from './recoil/index.tsx';
 
 function App() {
-  return (
-    <RecoilRoot>
-      <TodoList />
-    </RecoilRoot>
-  );
+  return <Recoil />;
 }
 
 export default App;
