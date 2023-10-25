@@ -1,8 +1,11 @@
+import { RecoilRoot } from 'recoil';
+import TodoList from './components/TodoList.tsx';
+
 function App() {
   return (
-    <>
-      <div>하잉</div>
-    </>
+    <RecoilRoot>
+      <TodoList />
+    </RecoilRoot>
   );
 }
 
