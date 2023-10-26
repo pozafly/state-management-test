@@ -1,7 +1,7 @@
-import Jotai from './jotai/index.tsx';
+import Zustand from './zustand/index.tsx';
 
 function App() {
-  return <Jotai />;
+  return <Zustand />;
 }
 
 export default App;
