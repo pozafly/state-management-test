@@ -2473,6 +2473,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proxy-compare@npm:2.5.1":
+  version: 2.5.1
+  resolution: "proxy-compare@npm:2.5.1"
+  checksum: c7cc151ac255150bcb24becde6495b3e399416c31991af377ce082255b51f07eaeb5d861bf8bf482703e92f88b90a5892ad57d3153ea29450d03ef921683d9fa
+  languageName: node
+  linkType: hard
+
 "punycode@npm:^2.1.0":
   version: 2.3.0
   resolution: "punycode@npm:2.3.0"
@@ -2543,6 +2550,7 @@ __metadata:
     react-dom: ^18.2.0
     recoil: ^0.7.7
     typescript: ^5.0.2
+    valtio: ^1.11.3
     vite: ^4.4.5
     zustand: ^4.4.4
   languageName: unknown
@@ -2960,6 +2968,24 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
+  languageName: node
+  linkType: hard
+
+"valtio@npm:^1.11.3":
+  version: 1.11.3
+  resolution: "valtio@npm:1.11.3"
+  dependencies:
+    proxy-compare: 2.5.1
+    use-sync-external-store: 1.2.0
+  peerDependencies:
+    "@types/react": ">=16.8"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    react:
+      optional: true
+  checksum: 119f5773b8a91814d83c85b01631b6859e9f6c848d8b69722ad4bcff13f6e000a66ec62257abf18443dafaec0f9aa0995c411c5c272fb12d3dc34823ade1611a
   languageName: node
   linkType: hard
 

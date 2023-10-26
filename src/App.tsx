@@ -1,7 +1,7 @@
-import Zustand from './zustand/index.tsx';
+import Valtio from './valtio/index.tsx';
 
 function App() {
-  return <Zustand />;
+  return <Valtio />;
 }
 
 export default App;
